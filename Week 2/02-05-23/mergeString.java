@@ -8,7 +8,7 @@ public class mergeString {
 	public void scenario1() {
 		String s1 = "abc";
 		String s2 = "pqr";
-		System.out.println(solution(s1, s2));
+		System.out.println(solution2(s1, s2));
 
 	}
 
@@ -19,14 +19,14 @@ public class mergeString {
 		
 		//String s1 = "abc";
 		//String s2 = "pqrstu";
-		System.out.println(solution(s1, s2));
+		System.out.println(solution2(s1, s2));
 	}
 
 	@Test
 	public void scenario3() {
 		String s1 = "abc";
-		String s2 = "pqrstu";
-		System.out.println(solution(s1, s2));
+		String s2 = "pqrs";
+		System.out.println(solution2(s1, s2));
 	}
 
 	// --- Time complexcity ==> O(n^2) ---
@@ -50,6 +50,49 @@ public class mergeString {
 				}
 			}
 		}
+		
+		return sb.toString();
+
+	}
+	
+	private String solution2(String s1, String s2) {
+		//create new string for the merged string
+		StringBuilder sb = new StringBuilder();
+		
+		int top =0;
+		int bottom=0;
+		
+			if(s1.length()==s2.length()) {
+				while(top<s1.length()) {
+				sb.append(s1.charAt(top++));
+				sb.append(s2.charAt(bottom++));
+				
+				}
+			}
+			else if(s1.length()>s2.length()) {
+				while(top<s2.length()) {
+					sb.append(s1.charAt(top++));
+					sb.append(s2.charAt(bottom++));
+					
+				}
+				while(top<s1.length()) {
+				sb.append(s1.charAt(top++));
+				
+				}
+			}
+			else if(s1.length()<s2.length()) {
+				while(bottom<s1.length()) {
+					sb.append(s1.charAt(top++));
+					sb.append(s2.charAt(bottom++));
+					
+				}
+				while(bottom<s2.length()) {
+				sb.append(s2.charAt(bottom++));
+				
+				}
+			}
+		
+		System.out.println(sb.toString());
 		
 		return sb.toString();
 
