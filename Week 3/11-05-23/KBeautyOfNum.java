@@ -28,7 +28,7 @@ public class KBeautyOfNum {
 
 	}
 
-	//Time complexity = O(n^2)
+	//Time complexity = O(n)
 	//Space complexity = O(n)
 	public int solution(int a, int k) {
 		int count = 0;
