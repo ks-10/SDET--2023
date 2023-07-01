@@ -1,34 +1,36 @@
 Test Case enumueration
 
-1.Verfiy Departure Airport (From)
-2.Verfiy Departure Airport (to)
-3.Verfiy Departure date
-4.Verfiy arrival date
-5.Verfiy for single, round trip and multicity
-6.Verify Travellers and class 
-7.Verify fare type
-8.Verfiy the flights listed after the search
-9.Verify the passenger details page
-10.After providing passenger details, Verify the details in preview page
-11.Verify seats section page
-12.Verify the Airport Pick & drop section
-13.Verify apply coupon and discount section
-14.Verfiy the payment methods
-15.Verify booking history
-16,Verify cancellation of ticket booked
-17.Verfiy confirmation email 
-18.Verfiy user is able to modify the booking
-19.Verify the filtes availble after the flight search is performed
-20.Verify the applications is compatible in both Mobile and web browser
-21.Verify with different screen resolutions
-22.Verify the applications is able to navigate and interact with functionalities using only the keyboard.
+1.Validate Departure Airport (From)
+2.Validate Departure Airport (to)
+3.Validate Departure date
+4.Validate arrival date
+5.Validate for single, round trip and multicity
+6.Validate Travellers and class 
+7.Validate fare type
+8.Validate the flights listed after the search
+9.Validate the passenger details page
+10.After providing passenger details, Validate the details in preview page
+11.Validate seats section page
+12.Validate the Airport Pick & drop section
+13.Validate apply coupon and discount section
+	- able to apply valid coupon
+14.Validate the payment methods
+15.Validate booking history
+16,Validate  cancellation of ticket booked
+17.Validate confirmation email 
+18.Validate user is able to modify the booking
+19.Validate the flight is availble after the flight search is performed
+20.Validate the applications is compatible in both Mobile and web browser
+21.Validate with different screen resolutions
+22.Validate the applications is able to navigate and interact with functionalities using only the keyboard.
+23.Validate the flight time is displayed correctly in differnent timezone.
 
 
 API:
-Verify the flight Search
-Verfiy the flight Booking 
-Verify all the error handling api's
-Verfiy the flight availability
-Verfiy the booking modification
-Verfiy the payment gateway api's
-Verify the notification api's
+Validate the flight Search api's
+Validate the flight Booking api's
+Validate all the error handling api's
+Validate the flight availability api's
+Validate the booking modification api's
+Validate the payment gateway api's
+Validatethe notification api's

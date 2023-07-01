@@ -1,0 +1,44 @@
+Enumerated Test Cases for "Book an Ola Cab":
+
+1. Verify if it is possible to book an Ola cab without logging in.
+2. Attempt to book a cab outside the city limits and verify if it is allowed.
+3. Try booking a cab from the current location to a destination outside the country and check if it is permitted.
+4. Book a cab for the current time and verify if the booking is successful.
+5. Schedule a cab for later during peak hours or midnight and confirm if the booking is accepted.
+6. Select "Ola Money" as the payment method when there is insufficient balance and ensure the booking is completed.
+7. Attempt to book a cab using an invalid coupon code and verify if the booking is rejected.
+8. Enter junk values in the "From" and "To" locations and try to book a cab, checking if the system handles it appropriately.
+9. Try booking a cab without providing any values in the "From" and "To" destinations and ensure the booking is not allowed.
+10. Attempt to book all available rides for the same destination at the same time and verify if it is allowed.
+11. Continuously book and cancel rides multiple times simultaneously and observe if the system handles it smoothly.
+12. Book a rental car with the maximum package hours and verify if the booking is successful.
+13. Navigate to the "Your Rides" page and check if the history of rides is displayed accurately.
+14. Check if it is possible to re-book a previously canceled ride and confirm if the booking can be completed.
+15. Search for Ola cabs without entering any specific locations and verify if the system provides relevant results.
+
+Globalization:
+
+16. Attempt to book a cab for an Indian location while being in the USA time zone and ensure the booking is processed correctly.
+17. Try making a payment in USD for an Indian trip and check if the currency conversion is handled accurately.
+
+Compatibility and Platform:
+
+18. Start booking a cab by entering the "From" location in the mobile app, then switch to the browser version and continue with the remaining details. Verify if the details are seamlessly transferred.
+19. Install an updated version of the Ola app in Chrome and an older version on a mobile device. Check if the booking details can be synchronized between the two versions.
+
+Accessibility:
+
+20. Add the "From" and "To" locations by adjusting Google Maps and confirm if the feature works smoothly.
+21. Test entering the "From" and "To" locations via text-to-speech and ensure the system accurately captures the input.
+22. Verify if the cab details are displayed within 60 seconds to 2 minutes of initiating the search.
+23. Check if there is a provision to cancel a ride while searching for nearby available cabs.
+24. Simulate a network connectivity loss during the booking process and check if the details are retained when connectivity is restored.
+25. Attempt to locate a destination via Google Maps when GPS is disabled and confirm if the system provides alternative methods.
+26. Try booking a cab with limited network connectivity and ensure the process is not affected.
+
+API:
+
+27. Verify if it is possible to book a cab through the respective endpoints without any authorization.
+28. Provide the payload for the "From" and "To" locations in terms of latitude and longitude and ensure the booking is successful.
+29. Retrieve the available cabs using a GET call and verify if the response contains the expected information.
+30. Attempt to update a booked ride using a PUT call and confirm if the changes are reflected accurately.
